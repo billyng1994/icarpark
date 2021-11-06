@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#bgcontainer{
+    display: flex;
+    justify-content: center;
+}
+
+#background{
+    max-width: 540px;
+    width: 100%;
+}
+
+#enter{
+    position: absolute;
+    width:200px;
+    height:50px;
+    border-radius: 25px;
+    color:white;
+    font-size: 24px;
+    background-color: blue;
+    bottom: 45%;
+    transform: translateX(45%);
+}
+
+#enter:hover{
+    background-color: gray;
+}
+
+@media (min-width: 520px){
+    #enter{
+        transform: translateX(80%);
+    }
+}
