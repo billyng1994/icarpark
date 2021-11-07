@@ -8,6 +8,7 @@ export default class GovHKExtService {
         const promise: Promise<AxiosResponse<GovHKCarparkVacancyResultResponseDto>> = axios.get("https://api.data.gov.hk/v1/carpark-info-vacancy")
         promise.then((value: AxiosResponse<GovHKCarparkVacancyResultResponseDto>) =>{
             if (value.status ===200){
+                /*// @ts-ignore*/
                 callback(value.data.results as GovCarparkItem[]);
             }
         });
